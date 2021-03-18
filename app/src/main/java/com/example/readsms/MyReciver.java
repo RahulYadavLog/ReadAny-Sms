@@ -41,10 +41,10 @@ public class MyReciver extends BroadcastReceiver {
                 }
                 msg=message[i].getMessageBody();
                 phone=message[i].getOriginatingAddress();
-                Intent intent1 = new Intent(context, MainActivity.class);
+          /*      Intent intent1 = new Intent(context, MainActivity.class);
                 intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent1.putExtra("message", message[i].getMessageBody());
-                context.startActivity(intent1);
+                context.startActivity(intent1);*/
 
             }
             Toast.makeText(context, "Message"+msg+"\nphoneNo"+phone, Toast.LENGTH_LONG).show();
